@@ -1,287 +1,289 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudio Jurídico</title>
-  <meta name="description" content="Abogado en Arequipa: derecho civil, familia, laboral, penal y empresarial. Agenda tu consulta en línea.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unikas Spa y Peluquería · Arequipa</title>
+  <meta name="description" content="Unikas Spa y Peluquería: peluquería y spa para mujeres en Arequipa. Cortes, color, balayage, alisados, tratamientos, manicure y spa. Reserva tu cita online.">
+  <meta name="theme-color" content="#0e0c0b">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- ============ NAVEGACIÓN ============ -->
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <img src="img/logo.svg" alt="" class="preloader__logo">
+    <span class="preloader__name">UNIKAS</span>
+    <span class="preloader__line"></span>
+  </div>
+
+  <!-- NAV -->
   <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#inicio" class="brand">
-        <span class="brand-mark" id="brandMark">CM</span>
-        <span class="brand-text"><strong id="brandName"></strong><small id="brandSub"></small></span>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#sobre">Sobre mí</a>
-        <a href="#areas">Áreas</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#testimonios" data-sec="secTestimonios">Testimonios</a>
-        <a href="#blog" data-sec="secBlog">Blog</a>
-        <a href="#faq" data-sec="secFaq">Preguntas</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#citas" class="btn btn-gold btn-sm" data-sec="secCitas">Agendar cita</a>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-    </div>
+    <a href="#inicio" class="nav__brand">
+      <img src="img/logo.svg" alt="Logo Unikas">
+      <span>UNIKAS<small>Spa &amp; Peluquería</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <button class="btn btn--gold btn--sm" data-book>Reservar cita</button>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span></button>
   </header>
 
-  <!-- ============ HERO ============ -->
+  <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow" id="heroEyebrow"></span>
-        <h1 id="heroTitle"></h1>
-        <p class="lead" id="heroText"></p>
-        <div class="hero-ctas">
-          <a href="#citas" class="btn btn-gold" data-sec="secCitas">Agendar consulta</a>
-          <a href="#" class="btn btn-ghost-light" id="heroWa" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
-            Escribir por WhatsApp
-          </a>
-        </div>
+    <div class="hero__media"><img src="img/lavado.jpg" alt="Clienta relajándose durante un lavado en Unikas"></div>
+    <div class="hero__shade"></div>
+    <div class="hero__content">
+      <p class="eyebrow reveal">Peluquería &amp; Spa para mujeres · Arequipa</p>
+      <h1 class="hero__title reveal">
+        Belleza que se siente
+        <em class="gold-text">única.</em>
+      </h1>
+      <p class="hero__sub reveal">Relájate, déjate aconsejar por nuestras estilistas y sal con un look que atrae todas las miradas. Aquí no damos ni un solo tijeretazo sin tu aprobación.</p>
+      <div class="hero__cta reveal">
+        <button class="btn btn--gold" data-book>Reservar mi cita</button>
+        <a href="#servicios" class="btn btn--ghost">Ver servicios y precios</a>
       </div>
-      <div class="hero-photo">
-        <div class="frame" id="heroPhoto"></div>
-        <div class="hero-badge" id="heroBadge"></div>
-      </div>
+      <ul class="hero__chips reveal">
+        <li><span>✦</span> Atención solo para mujeres</li>
+        <li><span>✦</span> Productos profesionales</li>
+        <li><span>✦</span> Reserva en 1 minuto</li>
+      </ul>
     </div>
-    <div class="container stats" id="stats"></div>
+    <aside class="hero__card reveal">
+      <p class="hero__card-label">Favorito de la semana</p>
+      <img src="img/s-balayage.jpg" alt="Balayage">
+      <div class="hero__card-row">
+        <div><strong>Balayage + Botox</strong><span>Color luminoso y cabello sano</span></div>
+        <b>S/ 140</b>
+      </div>
+      <button class="btn btn--gold btn--block btn--sm" data-book="Balayage + Botox">Lo quiero</button>
+    </aside>
+    <a href="#nosotros" class="hero__scroll" aria-label="Bajar"><span></span></a>
   </section>
 
-  <!-- ============ SOBRE MÍ ============ -->
-  <section id="sobre">
-    <div class="container sobre-grid">
-      <div class="sobre-img reveal">
-        <div class="sobre-frame" id="sobreImg"></div>
-        <div class="sobre-card">
-          <span>Colegiatura</span>
-          <strong id="sobreCol"></strong>
-        </div>
-      </div>
-      <div class="sobre-text reveal">
-        <span class="eyebrow">Sobre mí</span>
-        <h2 id="sobreNombre"></h2>
-        <div class="sobre-bio" id="sobreBio"></div>
-        <blockquote class="mision" id="sobreMision"></blockquote>
-        <ul class="enfoque" id="sobreEnfoque"></ul>
-        <p class="idiomas"><strong>Idiomas:</strong> <span id="sobreIdiomas"></span></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ÁREAS ============ -->
-  <section id="areas" class="sec-alt">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Áreas de práctica</span>
-        <h2>¿En qué puedo ayudarte?</h2>
-        <p>Asesoría y patrocinio en las principales ramas del derecho, con una estrategia diseñada para cada caso.</p>
-      </div>
-      <div class="areas-grid" id="areasGrid"></div>
-    </div>
-  </section>
-
-  <!-- ============ PORTAFOLIO ============ -->
-  <section id="portafolio">
-    <div class="container">
-      <div class="sec-head-row reveal">
-        <div class="sec-head">
-          <span class="eyebrow">Portafolio profesional</span>
-          <h2>Trayectoria y resultados</h2>
-          <p>Casos representativos, experiencia, formación académica y certificaciones.</p>
-        </div>
-        <a href="#" class="btn btn-outline" id="cvBtn" download>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
-          Descargar CV
-        </a>
-      </div>
-
-      <div class="tabs reveal" role="tablist">
-        <button class="tab active" data-tab="casos">Casos de éxito</button>
-        <button class="tab" data-tab="experiencia">Experiencia</button>
-        <button class="tab" data-tab="formacion">Formación</button>
-        <button class="tab" data-tab="certificaciones">Certificaciones</button>
-      </div>
-
-      <div class="tab-panel active" id="tab-casos">
-        <div class="chips" id="casoFiltros"></div>
-        <div class="casos-grid" id="casosGrid"></div>
-        <p class="nota-reserva">* Los nombres de los clientes se mantienen en reserva por secreto profesional.</p>
-      </div>
-      <div class="tab-panel" id="tab-experiencia"><ol class="timeline" id="timeline"></ol></div>
-      <div class="tab-panel" id="tab-formacion"><div class="formacion-grid" id="formacionGrid"></div></div>
-      <div class="tab-panel" id="tab-certificaciones"><div class="cert-grid" id="certGrid"></div></div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIOS ============ -->
-  <section id="testimonios" class="sec-dark" data-sec="secTestimonios">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Testimonios</span>
-        <h2>Lo que dicen mis clientes</h2>
-      </div>
-      <div class="testi-wrap reveal">
-        <button class="testi-nav prev" id="testiPrev" aria-label="Anterior">‹</button>
-        <div class="testi-viewport"><div class="testi-track" id="testiTrack"></div></div>
-        <button class="testi-nav next" id="testiNext" aria-label="Siguiente">›</button>
-      </div>
-      <div class="testi-dots" id="testiDots"></div>
-    </div>
-  </section>
-
-  <!-- ============ BLOG ============ -->
-  <section id="blog" data-sec="secBlog">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Blog jurídico</span>
-        <h2>Información legal en lenguaje claro</h2>
-        <p>Artículos breves para que conozcas tus derechos.</p>
-      </div>
-      <div class="chips center" id="blogFiltros"></div>
-      <div class="blog-grid" id="blogGrid"></div>
-    </div>
-  </section>
-
-  <!-- ============ FAQ ============ -->
-  <section id="faq" class="sec-alt" data-sec="secFaq">
-    <div class="container faq-grid">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Preguntas frecuentes</span>
-        <h2>Resolvemos tus dudas</h2>
-        <p>Si no encuentras tu respuesta, escríbeme y te responderé personalmente.</p>
-        <a href="#contacto" class="btn btn-primary" style="margin-top:24px">Hacer una pregunta</a>
-      </div>
-      <div class="faq-list reveal" id="faqList"></div>
-    </div>
-  </section>
-
-  <!-- ============ CITAS ============ -->
-  <section id="citas" data-sec="secCitas">
-    <div class="container">
-      <div class="cita-box reveal">
-        <div class="cita-info">
-          <span class="eyebrow">Agenda en línea</span>
-          <h2>Reserva tu consulta</h2>
-          <p>Elige el día y la hora que mejor te acomode. La primera evaluación del caso es gratuita.</p>
-          <ol class="pasos">
-            <li><span>1</span><div><strong>Elige fecha y hora</strong><small>Solo verás horarios disponibles.</small></div></li>
-            <li><span>2</span><div><strong>Cuéntame tu caso</strong><small>Unas líneas bastan para prepararme.</small></div></li>
-            <li><span>3</span><div><strong>Recibe la confirmación</strong><small>Te contacto por teléfono o WhatsApp.</small></div></li>
-          </ol>
-          <p class="cita-horario" id="citaHorario"></p>
-        </div>
-        <form class="cita-form" id="citaForm" autocomplete="on">
-          <div class="grid-2">
-            <label>Nombre completo*<input name="nombre" required placeholder="Tu nombre"></label>
-            <label>Teléfono / WhatsApp*<input name="telefono" required type="tel" placeholder="9XX XXX XXX" pattern="[0-9+\s]{9,15}"></label>
-          </div>
-          <label>Correo electrónico<input name="email" type="email" placeholder="tucorreo@ejemplo.com"></label>
-          <div class="grid-2">
-            <label>Área legal*<select name="area" id="citaArea" required></select></label>
-            <fieldset class="modalidad">
-              <legend>Modalidad*</legend>
-              <label class="radio"><input type="radio" name="modalidad" value="Presencial" checked><span>Presencial</span></label>
-              <label class="radio"><input type="radio" name="modalidad" value="Virtual"><span>Virtual</span></label>
-            </fieldset>
-          </div>
-          <div class="grid-2">
-            <label>Fecha*<input name="fecha" id="citaFecha" type="date" required></label>
-            <label>Hora*<select name="hora" id="citaHora" required disabled><option value="">Primero elige una fecha</option></select></label>
-          </div>
-          <label>Breve descripción del caso<textarea name="mensaje" rows="3" placeholder="Cuéntame brevemente tu situación"></textarea></label>
-          <button class="btn btn-gold btn-block" type="submit">Solicitar cita</button>
-          <small class="form-note">Tus datos son confidenciales y solo se usarán para contactarte.</small>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACTO ============ -->
-  <section id="contacto" class="sec-alt">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Contacto</span>
-        <h2>Conversemos sobre tu caso</h2>
-      </div>
-      <div class="contacto-grid">
-        <div class="contacto-info reveal" id="contactoInfo"></div>
-        <form class="contacto-form reveal" id="contactoForm">
-          <div class="grid-2">
-            <label>Nombre*<input name="nombre" required></label>
-            <label>Correo*<input name="email" type="email" required></label>
-          </div>
-          <div class="grid-2">
-            <label>Teléfono<input name="telefono" type="tel"></label>
-            <label>Asunto*<input name="asunto" required></label>
-          </div>
-          <label>Mensaje*<textarea name="mensaje" rows="5" required></textarea></label>
-          <label class="check"><input type="checkbox" required> Acepto que mis datos sean usados para responder mi consulta.</label>
-          <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-      <div class="mapa reveal" id="mapa"></div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand"><span class="brand-mark" id="footMark"></span><span class="brand-text"><strong id="footName"></strong><small id="footSub"></small></span></div>
-        <p class="foot-slogan" id="footSlogan"></p>
-        <div class="social" id="social"></div>
-      </div>
-      <div>
-        <h4>Navegación</h4>
-        <ul class="foot-links">
-          <li><a href="#sobre">Sobre mí</a></li>
-          <li><a href="#areas">Áreas de práctica</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li data-sec="secBlog"><a href="#blog">Blog</a></li>
-          <li data-sec="secCitas"><a href="#citas">Agendar cita</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Áreas</h4>
-        <ul class="foot-links" id="footAreas"></ul>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <ul class="foot-links" id="footContacto"></ul>
-      </div>
-    </div>
-    <div class="container foot-bottom">
-      <span>© <span id="year"></span> <span id="footCopy"></span>. Todos los derechos reservados.</span>
-      <a href="admin.html" class="admin-link">🔒 Acceso administrador</a>
-    </div>
-  </footer>
-
-  <!-- WhatsApp flotante -->
-  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
-  </a>
-  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
-
-  <!-- Modal y toast -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-box" role="dialog" aria-modal="true">
-      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
-      <div id="modalBody"></div>
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Cortes</span><i>✦</i><span>Balayage</span><i>✦</i><span>Tintes</span><i>✦</i><span>Alisado brasileño</span><i>✦</i><span>Botox capilar</span><i>✦</i><span>Manicure</span><i>✦</i><span>Facial</span><i>✦</i><span>Peinados para eventos</span><i>✦</i>
+      <span>Cortes</span><i>✦</i><span>Balayage</span><i>✦</i><span>Tintes</span><i>✦</i><span>Alisado brasileño</span><i>✦</i><span>Botox capilar</span><i>✦</i><span>Manicure</span><i>✦</i><span>Facial</span><i>✦</i><span>Peinados para eventos</span><i>✦</i>
     </div>
   </div>
-  <div class="toast" id="toast"></div>
 
-  <script src="js/data.js"></script>
+  <!-- NOSOTROS -->
+  <section class="section about" id="nosotros">
+    <div class="about__media reveal">
+      <img src="img/salon.jpg" alt="Interior del salón Unikas" class="about__img about__img--a">
+      <img src="img/lavado-v.jpg" alt="Lavado relajante" class="about__img about__img--b">
+      <div class="about__badge"><img src="img/logo.svg" alt=""><span>Tu momento<br>es aquí</span></div>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow reveal">Nosotros</p>
+      <h2 class="title reveal">Cámbiate el look en nuestra peluquería en <em>Arequipa</em></h2>
+      <p class="reveal">En Unikas Spa y Peluquería sabemos cómo dejarte radiante. Somos una peluquería con experiencia: simplemente relájate, déjate aconsejar por una de nuestras fantásticas estilistas y te garantizamos un look que atraerá todas las miradas.</p>
+      <p class="reveal">¿Corte sencillo pero perfecto? No te defraudaremos. ¿Cambio total de estilo? ¡Aceptamos el reto!</p>
+      <div class="about__points reveal">
+        <div><h3>Asesoría personalizada</h3><p>Te escuchamos y te recomendamos lo que mejor va con tu rostro y tu estilo.</p></div>
+        <div><h3>Tú tienes la última palabra</h3><p>Nada se corta ni se pinta sin tu aprobación.</p></div>
+        <div><h3>Siempre a la moda</h3><p>Seguimos las tendencias para que vayas siempre a la última.</p></div>
+      </div>
+      <a href="tel:+51972024022" class="link-arrow reveal">Pide tu cita al +51 972 024 022 <span>→</span></a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section services" id="servicios">
+    <div class="section__head">
+      <p class="eyebrow reveal">Servicios &amp; precios</p>
+      <h2 class="title reveal">Elige tu <em>momento Unikas</em></h2>
+      <p class="section__lead reveal">Precios claros, sin sorpresas. Toca <b>Reservar</b> y elige tu día y hora.</p>
+    </div>
+    <div class="filters reveal" id="filters" role="tablist">
+      <button class="filter is-active" data-filter="all">Todos</button>
+      <button class="filter" data-filter="cabello">Cabello</button>
+      <button class="filter" data-filter="color">Color</button>
+      <button class="filter" data-filter="tratamientos">Tratamientos</button>
+      <button class="filter" data-filter="spa">Spa &amp; Uñas</button>
+    </div>
+    <div class="services__grid" id="servicesGrid"><!-- generado por JS --></div>
+    <p class="services__note">* Los precios pueden variar según el largo y volumen del cabello. Consulta sin compromiso.</p>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section experience" id="experiencia">
+    <div class="experience__bg"><img src="img/estilistas.jpg" alt=""></div>
+    <div class="experience__inner">
+      <p class="eyebrow reveal">La experiencia</p>
+      <h2 class="title title--light reveal">Así se vive tu visita</h2>
+      <ol class="steps">
+        <li class="reveal"><span>01</span><h3>Reservas en un minuto</h3><p>Eliges servicio, día y hora desde la web. Te confirmamos por WhatsApp.</p></li>
+        <li class="reveal"><span>02</span><h3>Diagnóstico y asesoría</h3><p>¿No sabes qué te favorece? Tu estilista te propone opciones antes de empezar.</p></li>
+        <li class="reveal"><span>03</span><h3>Lavado relajante</h3><p>Masaje capilar y productos profesionales mientras te desconectas.</p></li>
+        <li class="reveal"><span>04</span><h3>Sales deslumbrando</h3><p>Peinado final y tips para que tu look dure más en casa.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- RENUEVA -->
+  <section class="section renew">
+    <div class="renew__text">
+      <p class="eyebrow reveal">Renueva tu aspecto</p>
+      <h2 class="title reveal">¿Tu peinado pasó de moda? <em>Actualízate.</em></h2>
+      <p class="reveal">En nuestra peluquería estamos atentas a los cambios de la moda para que vayas siempre a la última. Trae la foto del look de tu estrella favorita y sal a la calle con un peinado de cine.</p>
+      <p class="reveal">¿Quieres cortarte solo las puntas y temes acabar con la mitad de tu cabellera? ¡Descuida! Nuestras estilistas se asegurarán de entender exactamente lo que pides.</p>
+      <div class="renew__cta reveal">
+        <button class="btn btn--dark" data-book>Quiero un cambio</button>
+        <a class="btn btn--line" href="https://wa.me/51972024022?text=Hola%20Unikas%2C%20quiero%20asesor%C3%ADa%20para%20un%20nuevo%20look" target="_blank" rel="noopener">Pedir asesoría gratis</a>
+      </div>
+    </div>
+    <div class="renew__media reveal">
+      <img src="img/herramientas.jpg" alt="Herramientas profesionales de peluquería">
+      <div class="renew__quote">“Ni un solo tijeretazo sin tu aprobación.”</div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="promo">
+    <div class="promo__inner reveal">
+      <div>
+        <p class="eyebrow">Primera visita</p>
+        <h2>10% de descuento en tu primer servicio</h2>
+        <p>Reserva desde la web y menciona el código <b class="code" id="promoCode" title="Copiar">UNIKAS10</b></p>
+      </div>
+      <button class="btn btn--gold" data-book>Usar mi descuento</button>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section gallery" id="galeria">
+    <div class="section__head">
+      <p class="eyebrow reveal">Galería</p>
+      <h2 class="title reveal">Nuestro <em>espacio</em> y nuestro trabajo</h2>
+    </div>
+    <div class="gallery__grid">
+      <figure class="g g--wide reveal"><img src="img/salon.jpg" alt="Salón Unikas"><figcaption>Nuestro salón</figcaption></figure>
+      <figure class="g reveal"><img src="img/s-balayage.jpg" alt="Balayage fantasía"><figcaption>Color fantasía</figcaption></figure>
+      <figure class="g g--tall reveal"><img src="img/lavado-v.jpg" alt="Lavado"><figcaption>Lavado &amp; masaje</figcaption></figure>
+      <figure class="g reveal"><img src="img/s-corte.jpg" alt="Corte"><figcaption>Corte &amp; cepillado</figcaption></figure>
+      <figure class="g reveal"><img src="img/s-alisado.jpg" alt="Alisado"><figcaption>Alisado brasileño</figcaption></figure>
+      <figure class="g g--wide reveal"><img src="img/estilistas.jpg" alt="Estilistas trabajando"><figcaption>Manos expertas</figcaption></figure>
+      <figure class="g reveal"><img src="img/s-tinte.jpg" alt="Tinte y brushing"><figcaption>Tinte &amp; brushing</figcaption></figure>
+      <figure class="g g--wide reveal"><img src="img/herramientas.jpg" alt="Herramientas profesionales"><figcaption>Herramientas profesionales</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <div class="section__head">
+      <p class="eyebrow reveal">Preguntas frecuentes</p>
+      <h2 class="title reveal">Todo lo que <em>necesitas saber</em></h2>
+    </div>
+    <div class="faq__list">
+      <details class="reveal"><summary>¿Necesito reservar o puedo ir sin cita?</summary><p>Te recomendamos reservar para asegurar tu horario, pero si tenemos espacio te atendemos con gusto al llegar.</p></details>
+      <details class="reveal"><summary>¿Cuánto dura un balayage o un alisado?</summary><p>Depende del largo y volumen de tu cabello. En promedio entre 2 y 4 horas. Al reservar te indicamos el tiempo estimado.</p></details>
+      <details class="reveal"><summary>¿Qué métodos de pago aceptan?</summary><p>Efectivo, tarjetas, Yape y Plin.</p></details>
+      <details class="reveal"><summary>¿Puedo cambiar o cancelar mi cita?</summary><p>Claro, solo escríbenos por WhatsApp con al menos 3 horas de anticipación.</p></details>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact" id="contacto">
+    <div class="contact__info">
+      <p class="eyebrow reveal">Contacto</p>
+      <h2 class="title title--light reveal">Ven a <em>saludarnos</em></h2>
+      <ul class="contact__list reveal">
+        <li><span>Dirección</span>Arequipa, Perú</li>
+        <li><span>Teléfono / WhatsApp</span><a href="tel:+51972024022">+51 972 024 022</a></li>
+        <li><span>Horario</span>Lun – Sáb · 9:00 a.m. – 8:00 p.m.<br>Dom · 10:00 a.m. – 2:00 p.m.</li>
+      </ul>
+      <div class="contact__cta reveal">
+        <button class="btn btn--gold" data-book>Reservar cita</button>
+        <a class="btn btn--ghost" href="https://wa.me/51972024022" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+      <div class="socials reveal">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11a3.5 3.5 0 1 1-3-3.46M14 3c.5 2.5 2.5 4.5 5 4.8"/></svg></a>
+      </div>
+    </div>
+    <div class="contact__map reveal">
+      <iframe title="Mapa Arequipa" loading="lazy" src="https://www.google.com/maps?q=Arequipa,Peru&z=13&output=embed"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__brand"><img src="img/logo.svg" alt=""><span>UNIKAS<small>Spa &amp; Peluquería</small></span></div>
+    <p>© <span id="year"></span> Unikas Spa y Peluquería · Arequipa, Perú</p>
+    <p class="footer__credit">Diseño y desarrollo: NexusCode Systems</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="wa-float" href="https://wa.me/51972024022?text=Hola%20Unikas%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <!-- MODAL RESERVA -->
+  <div class="modal" id="bookModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="bookTitle">
+      <button class="modal__close" data-close aria-label="Cerrar">×</button>
+      <div class="modal__head">
+        <img src="img/logo.svg" alt="">
+        <div>
+          <p class="eyebrow">Reserva online</p>
+          <h3 id="bookTitle">Agenda tu cita</h3>
+        </div>
+      </div>
+      <div class="progress"><span id="progressBar"></span></div>
+
+      <form id="bookForm" novalidate>
+        <!-- paso 1 -->
+        <div class="step is-active" data-step="1">
+          <p class="step__label">1. Elige tu servicio</p>
+          <div class="pick-list" id="pickList"></div>
+        </div>
+        <!-- paso 2 -->
+        <div class="step" data-step="2">
+          <p class="step__label">2. Elige día y hora</p>
+          <div class="days" id="days"></div>
+          <div class="times" id="times"></div>
+        </div>
+        <!-- paso 3 -->
+        <div class="step" data-step="3">
+          <p class="step__label">3. Tus datos</p>
+          <label class="field"><span>Nombre</span><input type="text" id="fName" placeholder="Ej. María" required></label>
+          <label class="field"><span>Celular</span><input type="tel" id="fPhone" placeholder="9XX XXX XXX" required></label>
+          <label class="field"><span>Comentario (opcional)</span><textarea id="fNote" rows="2" placeholder="Ej. Tengo el cabello largo y teñido"></textarea></label>
+          <div class="summary" id="summary"></div>
+        </div>
+        <!-- paso 4 -->
+        <div class="step step--done" data-step="4">
+          <div class="done__icon">✓</div>
+          <h4>¡Listo, <span id="doneName"></span>!</h4>
+          <p>Tu solicitud de cita está lista. Envíala por WhatsApp y te confirmamos en minutos.</p>
+          <a class="btn btn--gold btn--block" id="waConfirm" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+        </div>
+
+        <p class="form-error" id="formError" role="alert"></p>
+        <div class="modal__actions" id="modalActions">
+          <button type="button" class="btn btn--line btn--sm" id="prevBtn">Atrás</button>
+          <button type="button" class="btn btn--gold btn--sm" id="nextBtn">Continuar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
